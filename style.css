@@ -1,5 +1,11 @@
-body {
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
 }
 
 .dashboard-container {
@@ -11,4 +17,61 @@ body {
 
 .sidebar {
     grid-row: 1 / -1;
+    background-color: rgb(0, 142, 215);
+    color: white;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.sidebar .branding {
+    /* Using Flexbox */
+    /* display: flex;
+    gap: 12px;
+    align-items: center; */
+
+    /* Using Grid */
+    display: grid;
+    grid-template-columns: 48px 1fr;
+    gap: 12px;
+    align-items: center;
+}
+
+.sidebar .branding svg {
+    /* Using Flexbox */
+    /* fill: white;
+    width: 48px;
+    height: 48px; */
+
+    /* Using Grid */
+    fill: white;
+}
+
+.sidebar .branding .title {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.sidebar .feature-navigation ul,
+.sidebar .help-navigation ul {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.sidebar .feature-navigation ul li,
+.sidebar .help-navigation ul li {
+    display: grid;
+    grid-template-columns: 48px 1fr;
+    gap: 12px;
+    font-size: 24px;
+}
+
+.sidebar .feature-navigation li svg,
+.sidebar .help-navigation li svg {
+    fill: white;
+    width: 24px;
+    height: 24px;
+    justify-self: center;
 }
