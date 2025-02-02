@@ -216,7 +216,7 @@ ul {
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: repeat(2, auto);
-    gap: 48px 24px;
+    gap: 36px 24px;
     background-color: rgb(216, 230, 245);
 }
 
