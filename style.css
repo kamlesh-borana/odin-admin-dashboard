@@ -82,6 +82,7 @@ ul {
     grid-template-columns: 2fr 1fr;
     gap: 36px 48px;
     box-shadow: 0 5px 4px lightgray;
+    z-index: 1;
 }
 
 .header .search-container {
