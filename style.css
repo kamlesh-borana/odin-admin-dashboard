@@ -75,3 +75,133 @@ ul {
     height: 24px;
     justify-self: center;
 }
+
+.header {
+    padding: 24px 48px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 36px 48px;
+    box-shadow: 0 5px 4px lightgray;
+}
+
+.header .search-container {
+    /* Using Flexbox */
+    /* display: flex;
+    gap: 12px;
+    align-items: center; */
+
+    /* Using Grid */
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 12px;
+    align-items: center;
+}
+
+.header .search-container svg {
+    width: 24px;
+    height: 24px;
+}
+
+.header .search-container input {
+    /* Using Flexbox */
+    /* flex: 1;
+    font-size: 18px;
+    background-color: lightgrey;
+    border: none;
+    border-radius: 18px;
+    padding: 4px 12px; */
+
+    /* Using Grid */
+    font-size: 18px;
+    background-color: lightgrey;
+    border: none;
+    border-radius: 18px;
+    padding: 4px 12px;
+}
+
+.header .profile-container {
+    /* Using Flexbox */
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px; */
+
+    /* Using Grid */
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.header .profile-container svg {
+    width: 24px;
+    height: 24px;
+}
+
+.header .profile-container img {
+    width: 48px;
+}
+
+.header .profile-container .profile-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.header .user-greeting-container {
+    /* Using Flexbox */
+    /* display: flex;
+    align-items: center;
+    gap: 24px; */
+
+    /* Using Grid */
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 24px;
+}
+
+.header .user-greeting-container img {
+    width: 72px;
+}
+
+.header .user-greeting-container .info-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.header .user-greeting-container .greeting {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.header .user-greeting-container .user-info {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.header .cta-container {
+    /* Using Flexbox */
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px; */
+
+    /* Using Grid */
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.header .cta-container button {
+    background-color: rgb(0, 142, 215);
+    color: white;
+    border: none;
+    padding: 8px 24px;
+    border-radius: 24px;
+    font-size: 18px;
+}
